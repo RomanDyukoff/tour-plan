@@ -22,3 +22,16 @@ const reviewsSlider = new Swiper('.reviews-slider', {
     prevEl: '.reviews-slider__button--prev',
   },
 });
+ ymaps.ready(function () {
+  var myMap = new ymaps.Map("YMapsID", {
+    center: [7.838196, 98.298813],
+    zoom: 10
+  });
+  var myGeoObject = new ymaps.GeoObject({
+    geometry: {
+        type: "Point",
+        coordinates: [7.838196, 98.298813]
+    }
+});
+  myMap.geoObjects.add(myGeoObject);
+});
