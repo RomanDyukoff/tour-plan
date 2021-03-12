@@ -33,5 +33,6 @@ const reviewsSlider = new Swiper('.reviews-slider', {
         coordinates: [7.838196, 98.298813]
     }
 });
+  myMap.behaviors.disable('scrollZoom');
   myMap.geoObjects.add(myGeoObject);
 });
