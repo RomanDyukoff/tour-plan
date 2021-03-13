@@ -25,7 +25,7 @@
       padding-top: 30px
       padding-bottom: 30px
     &__search
-      margin-left: auto
+      margin-left: 45px
     &-menu
       padding-top: 22px
       padding-bottom: 22px
@@ -36,6 +36,7 @@
     &__input
       width: 340px
   .hotel
+    padding-bottom: 55px
     &-grid
       flex-direction: column
     &__slider
@@ -48,13 +49,20 @@
     width: 340px
   .map
     width: 340px
+  .newsletter
+    padding: 73px 0 90px 0
   .reviews
     &__title
       font-size: 30px
       line-height: 38px
+      margin-bottom: 55px
     &-slider
       &__item
         max-width: 580px
+      &__username
+        margin: 6px 0 6px 0
+      &__profile
+        margin-bottom: 28px
   .activities
     &-wrapper
       flex-wrap: wrap
@@ -62,7 +70,7 @@
       margin-bottom: 20px
     .card
       width: 340px
-      height: 230px
+      height: 255px
 @media (max-width: 768px)
   .container
     max-width: 576px
@@ -174,3 +182,38 @@
       line-height: 23px
     .card
       width: 100%
+@media (max-width: 320px)
+  .container
+    max-width: 280px
+    width: 90%
+  .navbar
+    &-top
+      padding-top: 23px
+      margin-bottom: 20px
+  .breadcrumb
+    &-list
+      padding: 0
+  .hotel
+    padding-bottom: 45px
+    &-info
+      padding-bottom: 35px
+      &__offer
+        margin: 0
+    &-slider
+      height: 179px
+    &-right
+      min-height: 400px
+  .map
+    height: 173px
+  .newsletter
+    height: 320px
+    padding: 60px 0 70px 0
+    &-wrapper
+      height: 175px
+  .reviews
+    &__title
+      margin-bottom: 45px
+  .activities
+    padding-top: 28px
+
+
