@@ -8,7 +8,9 @@
         width: 100%
         height: 100%
         object-fit: cover
-
+  .card
+    width: 230px
+    height: 230px
   .booking
     width: 340px
   .map
@@ -53,6 +55,14 @@
     &-slider
       &__item
         max-width: 580px
+  .activities
+    &-wrapper
+      flex-wrap: wrap
+    &__card
+      margin-bottom: 20px
+    .card
+      width: 340px
+      height: 230px
 @media (max-width: 768px)
   .container
     max-width: 576px
@@ -130,7 +140,13 @@
         &--next
           margin-right: -65px
           right: 50%
-          transform: translate(50%, 0)        
+          transform: translate(50%, 0)
+  .activities
+    padding-top: 40px
+    padding-bottom: 60px
+    .card
+      width: 49%
+      height: 255px   
 @media (max-width: 576px)
   .logo
     width: 99px
@@ -149,3 +165,10 @@
         font-weight: 600
         font-size: 30px
         line-height: 38px
+  .reviews
+    padding-bottom: 50px
+  .activities
+    &__title
+      margin-bottom: 40px
+    .card
+      width: 100%
